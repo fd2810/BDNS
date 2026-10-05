@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Advanced - Animation</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <style>
+        img { position: relative; }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("img").animate({ left: "50px" });
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>Romal: 239720</p>
+    <img src="https://via.placeholder.com/150" alt="Sample Image" width="150"><br><br>
+    <button>Start Animation</button>
+</body>
+</html>

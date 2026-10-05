@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Advanced - Get / Set HTML</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                var str = $("p").html();
+                alert(str);
+            });
+            $("#b2").click(function () {
+                $("p").html("<b>Hello World</b>");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p><b>Romal Shah:</b> <u>239720</u></p>
+    <p>MongoDB</p>
+    <button id="b1">Get</button>
+    <button id="b2">Set</button>
+</body>
+</html>

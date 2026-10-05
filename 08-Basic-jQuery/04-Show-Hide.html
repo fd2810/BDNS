@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic jQuery - Show / Hide</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                $("#p").hide();
+            });
+            $("#b2").click(function () {
+                $("#p").show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="p">Romal Shah: 239720</p>
+    <button id="b1">Hide</button>
+    <button id="b2">Show</button>
+</body>
+</html>

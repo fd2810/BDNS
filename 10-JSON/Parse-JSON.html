@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parsing JSON</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var data = '{"name":"Romal","age":20,"dept":"IT"}';
+
+        var obj = JSON.parse(data);
+
+        for (var key in obj) {
+            document.writeln("<br/>" + key + " : " + obj[key]);
+        }
+    </script>
+</body>
+</html>

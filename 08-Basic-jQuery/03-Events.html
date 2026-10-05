@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic jQuery - Events</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#b1").hover(function () {
+                document.write("Hello Romal");
+            });
+
+            $("p").on("click", function () {
+                $(this).css("background", "yellow");
+            });
+
+            $("#b2").click(function () {
+                $("p").off("click");
+            });
+
+            $("#b3").click(function () {
+                $("#t1").hide();
+            });
+
+            $("input").select(function () {
+                $("input").after(" Text Marked!");
+            });
+
+            $("#b4").click(function () {
+                $("input").trigger("select");
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="b1">Hover</button><br><br>
+    <p>Welcome to the Mulund College</p>
+    <p>Romal: 239720</p>
+    <button id="b2">Off</button><br><br>
+    <p id="t1">Hello Romal</p>
+    <button id="b3">On (Hide)</button><br><br>
+    <input type="text" value="Romal 239720"><br><br>
+    <button id="b4">Trigger</button>
+</body>
+</html>

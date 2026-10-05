@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Advanced - Callback Function</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").hide("slow", function () {
+                    alert("The paragraph is now hidden");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>Romal: 239720</p>
+    <p>Welcome to MCC</p>
+    <button>Click!</button>
+</body>
+</html>
